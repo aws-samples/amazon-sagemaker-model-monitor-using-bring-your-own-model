@@ -1,0 +1,10 @@
+[aws-settings]
+profilename = <add you AWS profile name here>
+executionrole = <add the IAM Role here that you wish to use with SageMaker>
+
+[BASELINES]
+
+
+[DATASETS]
+
+[EXPERIMENT_TRIALS]

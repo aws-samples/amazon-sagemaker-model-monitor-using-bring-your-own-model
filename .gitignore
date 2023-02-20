@@ -1,0 +1,14 @@
+config.ini
+*.csv
+*.joblib
+*.tar.gz
+*.bin
+*.pyc
+*.DS_Store
+launch.json
+untracked/*
+!data/trained/model*
+!data/processed/model*
+!data/train.csv
+!data/test.csv
+!data/train_data_no_target.csv
