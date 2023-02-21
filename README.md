@@ -41,6 +41,19 @@ It is recommended to use a virtual environment to manage the project dependencie
 
 This example is orchestrated by the running of the numbered Jupyter Notebooks that can be found on the root directory of this project. 
 
+### Architecture Overview
+![ModelMonitorHighLevelView](./images/ModelMonitorHighLevelView.png)
+
+The structure of this repository is following a numbered list of notebooks. This is an attempt to make the example easy to follow and understood by the reader. When this approach is implemented in a solution there is no need to follow this structure and you should adjust it based on the specific details of your project. This code is only for demonstration purposes.
+
+1. The notebook `01_create_baselines.ipynb` describes how to generate the needed [baselines](#baselining) as well as the Model object, completing the tasks noted as steps 2,3,4 in above diagram
+
+2. The notebooks `02_` to `04_*` each showcase how to run an adhoc [quality check](#monitoring-checks) job for the respective type of Model Monitor type. These notebooks respectively perform the actions in steps 5,6,7,8 in above diagram
+
+4. The notebook `05_orchestrate_drift.ipynb` is simply running the previous four notebooks in sequence and for different [scenarios](#creating-artificial-drift) of possible data issues/changes.
+
+5. The notebook `06_evaluate_results.ipynb` is retrieving and [plotting](#evaluating-results-of-experiments) results for the different experiments/scenarios run. 
+
 #### Setup
 
 In this example we will be using the AWS cloud and therefore we need access to an AWS environment. At this point we assume that you have access to such and account and you have successfully setup a [named profile for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html). 
