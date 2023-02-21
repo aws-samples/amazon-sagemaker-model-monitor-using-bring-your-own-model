@@ -2,7 +2,7 @@
 
 In the repository we present a comprehensive example of how you can leverage the Amazon SageMaker Model Monitor capabilities when you are developing and deploying your models using your own environment (cloud or on-prem) and are looking to SageMaker specifically to help you with monitoring your models.
 
-If you are also training/deploying your models using Amazon SageMaker, then this is **not** the right example to follow as it is not leveraging the native synergies betwwen the SageMaker services. 
+If you are also training/deploying your models using Amazon SageMaker, then check out the examples in the [aws examples repository](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker_model_monitor) or the blogpost [Automate model retraining with Amazon SageMaker Pipelines when drift is detected](https://aws.amazon.com/blogs/machine-learning/automate-model-retraining-with-amazon-sagemaker-pipelines-when-drift-is-detected/) and its accompanying [GitHub repository](https://github.com/aws-samples/amazon-sagemaker-drift-detection).
 
 In this example we demonstrate how to monitor your model for data quality, model quality, data bias and model explainability changes. 
 
